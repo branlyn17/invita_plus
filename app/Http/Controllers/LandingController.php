@@ -8,7 +8,9 @@ class LandingController extends Controller
 {
     public function index()
     {
-        // Retorna la vista resources/views/landing.blade.php
-        return view('landing');
+        $data = "";
+        return view('landing.landing', [
+            'data' => $data,
+        ]);
     }
 }
