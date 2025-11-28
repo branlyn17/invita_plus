@@ -10,6 +10,8 @@
 
   @include('layouts.theme.2_head_styles')
 
+  @yield('css')
+  
 </head>
 <body class="font-pop bg-gray-50 text-slate-800 dark:bg-dark-bg dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-white overflow-x-hidden transition-colors duration-300">
 
@@ -27,6 +29,8 @@
   </div>
 
   @include('layouts.theme.6_scripts')
+
+  @yield('scripts')
 
 </body>
 </html>

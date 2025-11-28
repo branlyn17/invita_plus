@@ -1,4 +1,4 @@
-  <script>
+<script>
     (function () {
       'use strict';
       
@@ -124,7 +124,6 @@
         });
       }, { threshold: 0.1 });
       $$('.reveal').forEach(el => observer.observe(el));
-
       // 8. Preview Modal Logic
       const modal = $('#modal');
       const modalBackdrop = $('#modalBackdrop');

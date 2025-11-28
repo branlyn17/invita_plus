@@ -9,14 +9,7 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center max-w-3xl mx-auto reveal active">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 dark:bg-slate-800 text-brand-600 dark:text-brand-300 text-xs font-semibold mb-6 border border-brand-100 dark:border-slate-700">
-              <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
-              </span>
-              Nuevo: Confirmación de asistencia por WhatsApp
-            </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.1]">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.1] mt-[3rem]">
               Invitaciones que <br> <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-accent">todos amarán.</span>
             </h1>
             <p class="mt-6 text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto">
@@ -27,7 +20,7 @@
               <a href="#catalogo" class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-xl shadow-brand-500/20 transition-all hover:-translate-y-1">
                 Ver Plantillas
               </a>
-              <button class="trigger-login inline-flex items-center justify-center gap-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-200 text-slate-700 dark:text-slate-200 hover:text-brand-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-sm transition-all">
+              <button class="trigger-demo inline-flex items-center justify-center gap-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-200 text-slate-700 dark:text-slate-200 hover:text-brand-600 px-8 py-4 rounded-xl text-lg font-semibold shadow-sm transition-all">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 Ver Demo
               </button>
@@ -67,9 +60,9 @@
 
     <section id="como-funciona" class="py-20 bg-white dark:bg-dark-bg transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 reveal">
-        <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Crear es tan fácil como 1-2-3</h2>
-        <p class="mt-4 text-slate-600 dark:text-slate-400">No necesitas saber de diseño. Nosotros ponemos la tecnología.</p>
+        <div class="text-center mb-16 reveal mt-3">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Crear es tan fácil como 1-2-3</h2>
+            <p class="mt-4 text-slate-600 dark:text-slate-400">No necesitas saber de diseño. Nosotros ponemos la tecnología.</p>
         </div>
         
         <div class="grid md:grid-cols-3 gap-10 relative">
@@ -108,7 +101,7 @@
     <section id="catalogo" class="py-20 bg-slate-50 dark:bg-slate-900/50 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 reveal">
-        <div>
+        <div class="mt-3">
             <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Explora nuestro catálogo</h2>
             <p class="mt-2 text-slate-600 dark:text-slate-400">Diseños modernos que se adaptan a tu estilo.</p>
         </div>
@@ -205,9 +198,9 @@
         </div>
         
         <div class="mt-12 text-center">
-        <a href="#" class="text-brand-600 dark:text-brand-400 font-semibold hover:text-brand-700 flex items-center justify-center gap-2">Ver todo el catálogo 
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
+            <a href="{{ route('catalog.index') }}" class="text-brand-600 dark:text-brand-400 font-semibold hover:text-brand-700 flex items-center justify-center gap-2">Ver todo el catálogo 
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
         </div>
     </div>
     </section>
@@ -289,7 +282,7 @@
 
     <section id="precios" class="py-20 bg-white dark:bg-dark-bg transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal mt-3">
             <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Precios simples</h2>
             <p class="mt-4 text-slate-600 dark:text-slate-400">Paga una vez, usa para siempre. Sin suscripciones ocultas.</p>
         </div>
@@ -433,10 +426,10 @@
                 </div>
                 <p id="modalDesc" class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">Descripción detallada de la plantilla.</p>
                 
-                <div class="space-y-3">
-                    <button class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg shadow-brand-500/30 transition transform hover:-translate-y-0.5">Editar esta plantilla</button>
-                    <button class="w-full py-3 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-bold rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 transition">Ver demostración en vivo</button>
-                </div>
+                    <div class="space-y-3">
+                        <button class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg shadow-brand-500/30 transition transform hover:-translate-y-0.5">Editar esta plantilla</button>
+                        <button class="w-full py-3 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-bold rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 transition">Ver demostración en vivo</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -551,4 +544,109 @@
     </div>
 
 
+    {{-- MODAL DE VISTA RÁPIDA (Demo) --}}
+    <div id="demoModal" class="fixed inset-0 hidden z-[120] items-center justify-center p-4">
+
+        <div id="demoBackdrop" class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm transition-opacity opacity-0"></div>
+
+        <div id="demoContent" class="relative bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-5xl w-full p-6 lg:p-10 transform scale-95 opacity-0 transition-all duration-300 border border-slate-100 dark:border-slate-700">
+
+            <button id="demoClose" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white z-50">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <div class="grid md:grid-cols-5 gap-6 lg:gap-10">
+                
+                {{-- Columna 1: Vista Previa (El demo) --}}
+                <div class="md:col-span-3 h-[70vh] relative reveal delay-100">
+                    <div class="h-full bg-slate-100 dark:bg-slate-900 rounded-xl overflow-hidden shadow-xl flex items-center justify-center">
+                        
+                        {{-- Aquí iría el IFRAME o contenido de la Demo --}}
+                        {{-- Usa un ID para que el script pueda inyectar el contenido --}}
+                        <div id="modalDemoContainer" class="w-full h-full p-4 flex items-center justify-center">
+                            <p class="text-slate-500">Cargando demo...</p>
+                            {{-- Idealmente, aquí se carga un IFRAME que muestra la invitación real --}}
+                            {{-- <iframe id="modalIframeDemo" class="w-full h-full border-none" src="about:blank"></iframe> --}}
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Columna 2: Información y CTA --}}
+                <div class="md:col-span-2 reveal delay-200 flex flex-col justify-between">
+                    <div>
+                        {{-- Metadata --}}
+                        <span id="demoCategory" class="text-xs font-semibold uppercase tracking-wider text-brand-500 bg-brand-500/10 px-3 py-1 rounded-full">Boda</span>
+                        <h2 id="demoTitle" class="text-3xl font-bold mt-3 text-slate-900 dark:text-white">Título de la Plantilla</h2>
+                        <p id="demoDesc" class="mt-2 text-slate-600 dark:text-slate-400">Descripción breve de la plantilla, sus colores, tipografía y si es gratuita o PRO.</p>
+                    
+                        <div class="mt-6 space-y-3">
+                            <div class="flex items-center gap-2 text-slate-700 dark:text-slate-200">
+                                <svg class="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2z"/></svg>
+                                <span>Animación fluida</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-slate-700 dark:text-slate-200">
+                                <svg class="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                <span>Compatible con música</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- CTA Principal --}}
+                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-700">
+                        <span id="demoPrice" class="text-4xl font-extrabold text-slate-900 dark:text-white block">GRATIS</span>
+                        <a href="" class="w-full mt-4 inline-flex items-center justify-center bg-brand-500 hover:bg-brand-600 text-white text-lg font-bold px-8 py-4 rounded-xl shadow-xl shadow-brand-500/30 transition-all hover:-translate-y-0.5">
+                            Personalizar y Descargar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 </div>
+@section('scripts')
+<script>
+    // DEMO MODAL LOGIC
+    const demoModal = document.querySelector('#demoModal');
+    const demoBackdrop = document.querySelector('#demoBackdrop');
+    const demoContent = document.querySelector('#demoContent');
+    const demoTriggers = document.querySelectorAll('.trigger-demo');
+    const demoClose = document.querySelector('#demoClose');
+
+    function openDemo() {
+        demoModal.classList.remove('hidden');
+        demoModal.classList.add('flex');
+
+        setTimeout(() => {
+            demoBackdrop.classList.remove('opacity-0');
+            demoContent.classList.remove('scale-95', 'opacity-0');
+            demoContent.classList.add('scale-100', 'opacity-100');
+        }, 10);
+    }
+
+    function closeDemo() {
+        demoBackdrop.classList.add('opacity-0');
+        demoContent.classList.remove('scale-100', 'opacity-100');
+        demoContent.classList.add('scale-95', 'opacity-0');
+
+        setTimeout(() => {
+            demoModal.classList.add('hidden');
+            demoModal.classList.remove('flex');
+        }, 300);
+    }
+
+    demoTriggers.forEach(btn => btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openDemo();
+    }));
+
+    demoClose.addEventListener('click', closeDemo);
+    demoBackdrop.addEventListener('click', closeDemo);
+</script>
+@endsection
